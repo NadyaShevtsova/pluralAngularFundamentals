@@ -3,11 +3,12 @@
 eventsApp.controller('EventController',
   function EventController($scope) {
 
-    $scope.snippet = '<span stype="color:red">hi there</span>';
-    $scope.boolValue = false;
-    $scope.mystyle = {color: 'red'};
-    $scope.myclass = "blue";
-    $scope.buttonDissabled = true;
+    $scope.sortorder = 'name';
+    //$scope.snippet = '<span stype="color:red">hi there</span>';
+    //$scope.boolValue = false;
+    //$scope.mystyle = {color: 'red'};
+    //$scope.myclass = "blue";
+    //$scope.buttonDissabled = true;
     $scope.event = {
       name: 'Angular Boot Camp',
       date: '1/1/2013',
@@ -20,12 +21,12 @@ eventsApp.controller('EventController',
       imageUrl: '/img/angularjs-logo.png',
       sessions: [
         {
-          name: 'Directive Masterclass',
+          name: 'Directive Masterclass introductory',
           creatorName: 'Bob Smith',
           duration: '1 hr',
           level: 'Advanced',
           abstract: 'Inthis session you will learn the ins and outs of directives!',
-          upVoteCount: 5
+          upVoteCount: 0
         },
         {
           name: 'Scope for fun and profit',
