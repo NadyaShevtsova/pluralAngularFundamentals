@@ -9,7 +9,9 @@ eventsApp.controller('EventController',
     //$scope.myclass = "blue";
     //$scope.buttonDissabled = true;
     $scope.sortorder = 'name';
-    $scope.event = eventData.event;
+    eventData.getEvent(function(event) {
+      $scope.event = event;
+    });
 
     $scope.upVoteCount = function(session) {
       session.upVoteCount++;
