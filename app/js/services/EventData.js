@@ -7,7 +7,7 @@ eventsApp.factory('eventData', function($http, $log) {
         }).
         error(function(data, status, headers, config) {
           $log.warn(data, status, headers, config);
-        })
+        });
     }
   };
-})
+});
